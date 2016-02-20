@@ -76,4 +76,8 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  # For Devise + Heroku
+  # TODO update if the host changes to say beacon.com...
+  config.action_mailer.default_url_options = { host: 'beacon-pinteresting.heroku.com' }
 end
